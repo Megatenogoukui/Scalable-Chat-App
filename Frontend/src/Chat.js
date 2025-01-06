@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import SignUp from "./Signup.js";
-import Chat from "./Chat.js";
 
 function App() {
   const [messages, setMessages] = useState([]);
