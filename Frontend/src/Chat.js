@@ -6,7 +6,6 @@ function App() {
   const [message, setMessage] = useState("");
   const [connectionStatus, setConnectionStatus] = useState("Connecting...");
   const [clientId, setClientId] = useState(localStorage.getItem("_id") || null);
-  const queryParams = new URLSearchParams(window.location.search);
 
   const socketRef = useRef(null);
   const reconnectTimeout = useRef(null);
